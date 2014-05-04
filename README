@@ -13,7 +13,13 @@ not yet done, but single and double precision work just fine.
 
 I also simplified the build process. It is nowhere near cross-platform, but
 `make.inc` is currently set up for gfortran and should build properly on any
-Unix-like platform. I also removed the included copy of LAPACK (use your own).
+Unix-like platform. I also removed the included copy of LAPACK (use your
+own). To use this under OS X, I recommend replacing `BLAS` with `-framework
+accelerate` to get the Apple copies of LAPACK and BLAS.
+
+To build PROPACK, execute the script `expand.py` in the `master` directory. This
+will expand the templates into single precision and double precision versions of
+PROPACK.
 
 The original PROPACK README follows below.
 
