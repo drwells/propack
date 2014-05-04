@@ -1,5 +1,6 @@
 c
-c     Rasmus Munk Larsen, Stanford University, 1999, 2004.
+c     (C) Rasmus Munk Larsen, Stanford University, 1999, 2004.
+c     (C) David Wells, Virginia Tech, 2014
 c
 
       subroutine XXreorth(n,k,V,ldv,vnew,normvnew,index,alpha,work,
