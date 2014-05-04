@@ -1,5 +1,6 @@
 #
 #     (C) Rasmus Munk Larsen, Stanford University, 2004
+#     (C) David Wells, Virginia Tech, 2014
 #
 include ../../make.inc
 IPATH = -I..

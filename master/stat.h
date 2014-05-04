@@ -1,5 +1,6 @@
 c
 c     (C) Rasmus Munk Larsen, Stanford University, 2000
+c     (C) David Wells, Virginia Tech, 2014
 c
 
       integer nopx, nreorth, nreorthu, nreorthv, ndot, nitref,

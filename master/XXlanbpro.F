@@ -96,6 +96,7 @@ c                     after IERR steps, but that is no longer the case.
 c                     It is probably safe to ignore.
 c
 c     (C) Rasmus Munk Larsen, Stanford University, 1999, 2004
+c     (C) David Wells, Virginia Tech, 2014
 c
 
 

@@ -88,6 +88,7 @@ c     IPARM: INTEGER array. Array used for passing data to the APROD
 c         function.
 c
 c     (C) Rasmus Munk Larsen, Stanford, 1999, 2004
+c     (C) David Wells, Virginia Tech, 2014
 c
 
 
