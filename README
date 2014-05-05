@@ -2,8 +2,8 @@ PROPACK
 
 PROPACK (partial reorthogonalization package) is a Fortran library for
 calculating partial singular value decompositions (SVDs) of arbitrary
-matrices. The only requirement of the 'matrix' a routine calculating
-matrix-vector products.
+matrices. The only needed representation of the 'matrix' is a routine
+calculating matrix-vector products.
 
 The original copy of PROPACK contained four slightly different copies of the
 same library, one for each common numerical type (single and double precision
@@ -14,12 +14,17 @@ not yet done, but single and double precision work just fine.
 I also simplified the build process. It is nowhere near cross-platform, but
 `make.inc` is currently set up for gfortran and should build properly on any
 Unix-like platform. I also removed the included copy of LAPACK (use your
-own). To use this under OS X, I recommend replacing `BLAS` with `-framework
-accelerate` to get the Apple copies of LAPACK and BLAS.
+own). There are some problems with the single precision accelerate framework on
+OS X that I do not understand, but the double precision routines work
+properly. If you need single precision, then I recommend building your own
+copies of BLAS and LAPACK. Either way, this amounts to replacing `BLAS` in
+`make.inc` with either `-framework accelerate` or `-L/path/to/lapack
+-L/path/to/blas -lblas -llapack`, or something close (under fink it is
+`-lrefblas` and `-lreflapack`).
 
 To build PROPACK, execute the script `expand.py` in the `master` directory. This
 will expand the templates into single precision and double precision versions of
-PROPACK.
+PROPACK into the directory below.
 
 The original PROPACK README follows below.
 
