@@ -21,7 +21,7 @@ c           the generated Krylov subspace.
 c     APROD: Subroutine defining the linear operator A.
 c            APROD should be of the form:
 c
-c           SUBROUTINE DAPROD(TRANSA,M,N,X,Y,DPARM,IPARM)
+c           SUBROUTINE XXAPROD(TRANSA,M,N,X,Y,DPARM,IPARM)
 c           CHARACTER(LEN=1) TRANSA
 c           INTEGER M,N,IPARM(*)
 c           XXXCAP X(*),Y(*),DPARM(*)

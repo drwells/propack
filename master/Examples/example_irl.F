@@ -116,7 +116,7 @@ c
       call clearstat
 
 c
-c     Set options for DLANSVD_IRL
+c     Set options for XXLANSVD_IRL
 c
       eps = XXlamch('e')
       ioption(1) = 0
